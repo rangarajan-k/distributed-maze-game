@@ -1,0 +1,21 @@
+1. when a player joins the game how does he get to see the snapshot of the current grid (eg available free locations, treasures in the game)
+2. when the player joins who decides which location the player will get (the game or the player itself)
+3. can a location have more than one tresure if not then what does this mean (A player collects one or more treasures when the player’s location is the same as the treasure’s location.)
+4. how does the game store the current score of the player. (suppose if the node crashes in between and is resumes after some time how does the game resume from where the player left or the player will start a new game again)
+5. every player will open connection to tracker (Ip address and port) and listen on (own IP address and port ) for request/connect from/to other players.
+6. Suppose a new player wants to join the game and after it obtains information from tracker and some player immidiately crashed after that how will the new player use this information. will it discard and obtain new information from tracker.
+7. how will the new player that just obtained the game state inforation from tracker is not valid.
+8. 
+
+
+Basic functionality
+
+There are only two process
+- Tracker.java
+- Game.java
+
+1. A tracker should be able to maintain a list of all the players playing the game
+2. the game should be able to decide which node is primary server and which node is backup server
+3. A player able to make move (play the game)    
+4. Server able to maintain the score of all the players in the game
+5. 
